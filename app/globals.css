@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #a30101;
 }
 
 @theme inline {
@@ -15,7 +15,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #c09635;
   }
 }
 
@@ -23,4 +23,49 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* latihan 1 rosyid: seluruh halaman berada di tengah */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa;
+}
+
+/* latihan 1 rosyid: kotak utama berbentuk card */
+.card {
+  text-align: center;
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  max-width: 550px;
+  width: 90%;
+}
+
+/* latihan 1 rosyid: tampilan judul di dalam card */
+.card h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+/* latihan 1 rosyid: tampilan paragraf di dalam card */
+.card p {
+  color: #666;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* latihan 2 rosyid: jarak antara paragraf utama dan informasi */
+.info {
+  margin-top: 30px;
+}
+
+/* latihan 1 rosyid: tampilan paragraf di dalam bagian informasi */
+.info p {
+  color: var(--foreground);
+  font-size: 17px;
+  line-height: 1.8;
 }
